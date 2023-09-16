@@ -850,7 +850,7 @@ execBoth(function () {
     var gb, Ya = function () {
         function a(a) { a && void 0 == Za ? (requestAnimFrame(c), Za = 1, gb = 0) : a || void 0 == Za || (Za = void 0); Xa = bb ? Na : Sa } function c(a) {
             if (0 != x && -1 != x && -4 != x && void 0 != Za) {
-                a = ($.now() - Ua)/2; if (-3 == x || -2 == x && Pa()) f(Xa, "n" != z("timeU") ? 17E3 < a ? "DNF" : 15E3 < a ? "+2" : 15 - ~~(a / 1E3) : TIMER_INSPECT); else { var b = r(0 < a ? a : 0, !0); f(Xa, { u: b, c: b.replace(/([.>])(\d)\d+(<|$)/, "$1$2$3"), s: b.split(".")[0], n: TIMER_SOLVE, i: TIMER_SOLVE }[z("timeU")]) } -3 == x || -2 == x ? (Xa !== Na && (12E3 <= a ? f(Na, '<div style="font-family: Arial;">Go!!!</div>') :
+                a = ($.now() - Ua)*(3/5); if (-3 == x || -2 == x && Pa()) f(Xa, "n" != z("timeU") ? 17E3 < a ? "DNF" : 15E3 < a ? "+2" : 15 - ~~(a / 1E3) : TIMER_INSPECT); else { var b = r(0 < a ? a : 0, !0); f(Xa, { u: b, c: b.replace(/([.>])(\d)\d+(<|$)/, "$1$2$3"), s: b.split(".")[0], n: TIMER_SOLVE, i: TIMER_SOLVE }[z("timeU")]) } -3 == x || -2 == x ? (Xa !== Na && (12E3 <= a ? f(Na, '<div style="font-family: Arial;">Go!!!</div>') :
                     8E3 <= a && f(Na, '<div style="font-family: Arial;">8s!</div>')), "n" != z("voiceIns") && (b = y, 7900 <= a && 7900 > gb && (b = "1" == z("voiceIns") ? db : cb), 11900 <= a && 11900 > gb && (b = "1" == z("voiceIns") ? mb : lb), b.volume = ~~z("voiceVol") / 100, b.play())) : Xa !== Na && f(Na, ""); gb = a; requestAnimFrame(c)
             }
         } function e(a) { /^[rgy]$/.exec(a) && (a = Va["rgy".indexOf(a)]); Sa.css("color", a); Na.css("color", a) } function n(a) { f(bb ? Na : Sa, (void 0 != a ? r(a, !0) : "--:--") + '<div class="insplabel">&#59062;</div><div class="difflabel"/>') } function f(a, b) {
@@ -884,7 +884,7 @@ execBoth(function () {
                         var Va = f(Sa, 0, r); if (!DEBUG || Va) {
                             var ab = $.now(); if (!(200 > ab - w)) {
                                 if (0 < x) {
-                                    w = ab; Ta[x] = (w - Ua)/2; if (27 == Sa) {
+                                    w = ab; Ta[x] = (w - Ua)*(3/5); if (27 == Sa) {
                                         ab = [-1]; for (var Na = 1; x < Ta.length;)ab[Na++] = Ta[x++]; Ta =
                                             ab; a(1)
                                     } a(x - 1); 0 == x && (h = w, 32 != Sa && a(-1), Ya.fixDisplay(!1, Va),  e("time", Ta))
